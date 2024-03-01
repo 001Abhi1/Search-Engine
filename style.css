@@ -1,22 +1,24 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Popins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    background:linear-gradient(90deg,rgb(46, 45, 45),rgb(109, 109, 238));
+body {
+    background: linear-gradient(90deg, rgb(46, 45, 45), rgb(109, 109, 238));
     color: white;
 }
-h1{
+
+h1 {
     text-align: center;
-    margin:100px auto 50px;
+    margin: 50px auto 30px;
     font-weight: 600;
 }
-form{
-    width:90%;
-    max-width: 400px;
+
+form {
+    width: 90%;
+    max-width: 600px;
     margin: auto;
     height: 60px;
     display: flex;
@@ -24,20 +26,20 @@ form{
     align-items: center;
     border-radius: 8px;
 }
-form input{
-    flex:1;
+
+form input {
+    flex: 1;
     height: 100%;
     border: 0;
     outline: 0;
     background: transparent;
-    color:#0a0a0a;
+    color: #0a0a0a;
     font-size: 18px;
-    padding: 0 30px;
-
+    padding: 0 15px;
 }
 
-form button{
-    padding:  0 40px;
+form button {
+    padding: 0 20px;
     height: 100%;
     border: 0;
     outline: 0;
@@ -47,48 +49,50 @@ form button{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     cursor: pointer;
-
 }
 
-::placeholder{
+::placeholder {
     color: rgb(14, 13, 13);
     font-size: 18px;
 }
 
-#show-more-btn{
+#show-more-btn {
     background: #ff3929;
-    color:#fff;
-    border:0;
+    color: #fff;
+    border: 0;
     outline: 0;
     padding: 10px 20px;
     border-radius: 4px;
-    margin:10px auto 100px;
+    margin: 10px auto 50px;
     cursor: pointer;
     display: none;
 }
 
-.search-result{
-    width:80%;
-    margin:100px auto 50px;
+.search-result {
+    width: 90%;
+    margin: 50px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap:40px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
-.search-result img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
+.search-result img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 25px;
 }
 
-@media screen and (max-width: 400px) {
-    .search-result{
-        width:60%;
-        margin:100px auto 50px;
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap:30px;
+@media screen and (min-width: 600px) {
+    .search-result {
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
-}
+
+    form input {
+        padding: 0 30px;
+    }
+
+    form button {
+        padding: 0 40px;
+    }
+};
